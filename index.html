@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   
   <title>Frontend Mentor | Results summary component</title>
@@ -18,10 +19,10 @@
 <body>
   <main>
     <div class="blue section">
-      <h4>
+      <h4 class="text-top">
         Your Result
       </h4>
-      <div>
+      <div class="circle">
         <h1>76</h1>
         <p>of 100</p>
       </div>
@@ -29,29 +30,31 @@
       <p>You scored higher than 65% <br>of the people who have taken<br>these tests.</p>
     </div>
     <div class="white section">
-      <h3>Summary</h3>
-      <div class="reaction percentage">
-        Reaction
-        <div class="ratio">
-          <span class="dark-blue">80</span> / 100 
+      <h3 class="text-top">Summary</h3>
+      <div class="colors">
+        <div class="reaction percentage">
+          <object data="assets/images/icon-reaction.svg"></object>Reaction
+          <div class="ratio">
+            <span class="dark-blue">80</span> / 100 
+          </div>
         </div>
-      </div>
-      <div class="memory percentage">
-        Memory
-        <div class="ratio">
-          <span class="dark-blue">92</span> / 100
+        <div class="memory percentage">
+          <object data="assets/images/icon-memory.svg"></object>Memory
+          <div class="ratio">
+            <span class="dark-blue">92</span> / 100
+          </div>
         </div>
-      </div>
-      <div class="verbal percentage">
-        Verbal
-        <div class="ratio">
-          <span class="dark-blue">61</span> / 100
+        <div class="verbal percentage">
+          <object data="assets/images/icon-verbal.svg"></object>Verbal
+          <div class="ratio">
+            <span class="dark-blue">61</span> / 100
+          </div>
         </div>
-      </div>
-      <div class="visual percentage">
-        Visual
-        <div class="ratio">
-          <span class="dark-blue">72</span> / 100
+        <div class="visual percentage">
+          <object data="assets/images/icon-visual.svg"></object>Visual
+          <div class="ratio">
+            <span class="dark-blue">72</span> / 100
+          </div>
         </div>
       </div>
       <button>Continue</button>
