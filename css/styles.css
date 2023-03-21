@@ -13,7 +13,6 @@ html {
 }
 
 body {
-    background-color: grey;
     font-family: HankenGrotesk;
     font-weight: 500;
     font-size: 1.125rem;
@@ -185,6 +184,82 @@ button {
     color: hsl(224, 30%, 27%);
 }
 
+@media (min-width: 900px) {
 
+
+    body {
+        height: 100vh;
+        display: flex;
+    }
+    main {
+        display: flex;
+        border-radius: 40px;
+        width: 45vw;
+        margin: auto;
+        box-shadow: 20px 20px 10px -20px rgba(172, 172, 216, 0.675),
+                    0px -20px 10px -20px rgba(172, 172, 216, 0.3);
+    }
+
+    .blue.section {
+        height: 70vh;
+        border-radius: 40px;
+        width: 50%;
+        display: grid;
+        grid-template-areas: 
+        "result"
+        "circlee"
+        "great";
+        grid-template-rows: 20% 40% 40%;
+    }
+
+    .result {
+        grid-area: result;
+        display: flex;
+        align-self: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .circle {
+        grid-area: circlee;
+    }
+
+    .great {
+        grid-area: great;
+    }
+    .white.section {
+        border-radius: 40px;
+        width: 50%;
+        height: 70vh;
+        display: grid;
+        grid-template-areas: 
+        "summary"
+        "percentage"
+        "button";
+        grid-template-rows: 20% 60% 20%;
+    }
+
+    .ninety.ninety-summary{
+        grid-area: summary;
+        display: flex;
+        align-self: center;
+    }
+
+    .colors {
+        grid-area: percentage;
+    }
+
+    .ninety {
+        grid-area: button;
+    }
+
+    .percentage {
+        height: 25%;
+    }
+
+    .section {
+        height: 50vh;
+    }
+}
 
 
